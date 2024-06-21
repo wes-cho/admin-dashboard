@@ -1,12 +1,16 @@
+body{
+    font-size: Roboto, sans-serif;
+}
 .container{
     display:grid;
     grid-template-columns: minmax(300px, 1fr) 5fr;
-    grid-template-rows: 1fr 5fr;
     height: 100vh;
 }
 li{
     list-style-type:none;
 }
+
+/*----------------------------------------------*/
 h1{
     display: inline;
 }
@@ -47,3 +51,46 @@ h1{
     grid-column: 1;
     margin-top: 3rem;
 }
+
+/*----------------------------------------------*/
+.header{
+    margin: 2rem  0 0 2rem;
+    display: grid;
+    grid-template-rows: 100px 150px;
+    grid-template-columns: 1fr 1fr;
+}
+.header img{
+    border: 0.5px solid;
+    border-radius: 50%;
+    height: 5rem;
+}
+.name{
+    display:inline;
+}
+.search{
+    height: fit-content;
+    align-content: center;
+}
+.search i{
+    padding-right: 10px;
+    
+}
+.searchbar{
+    width: 75%;
+    height: 2rem;
+    background-color: lightgray;
+    border: 0;
+    border-radius: 30px;
+
+}
+.profile{
+
+}
+.user{
+
+}
+.action-buttons{
+
+}
+
+/*----------------------------------------------*/
