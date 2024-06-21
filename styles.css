@@ -1,0 +1,38 @@
+.container{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+li{
+    list-style-type:none;
+}
+.sidebar{
+    background-color: lightblue;
+    grid-row:  1 / span 6;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 3fr;  
+    gap: 3rem;  
+}
+.sidebar i{
+    color: white;
+    padding: 0 1rem 0 1rem;
+}
+.sidebar p{
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    gap: 1rem;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.navigation{
+    grid-column: 1;
+}
+.logo p{
+    grid-column: 2;
+}
+.settings{
+    grid-column: 1;
+}
