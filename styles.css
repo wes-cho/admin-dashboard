@@ -1,22 +1,31 @@
 .container{
     display:grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(300px, 1fr) 5fr;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
 }
 li{
     list-style-type:none;
 }
+h1{
+    display: inline;
+}
+.logo {
+    padding-top: 30px;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
 .sidebar{
-    background-color: lightblue;
+    background-color: #21A6FF;
     grid-row:  1 / span 6;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr 3fr;  
-    gap: 3rem;  
+    grid-template-rows: [first-row] 0.25fr [second-row] 1fr [third-row] 1fr [fourth-row] 3fr;  
+    gap: 1rem;  
 }
 .sidebar i{
     color: white;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1.75rem 0 1rem;
+    font-size: 1.25rem;
 }
 .sidebar p{
     font-family: Roboto, sans-serif;
@@ -29,10 +38,12 @@ li{
 }
 .navigation{
     grid-column: 1;
+    margin-top: 1rem;
 }
 .logo p{
     grid-column: 2;
 }
 .settings{
     grid-column: 1;
+    margin-top: 3rem;
 }
