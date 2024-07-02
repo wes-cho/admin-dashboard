@@ -59,7 +59,7 @@ h1{
     margin: 2rem 3rem;
     display: grid;
     grid-template-rows: 50px 150px;
-    grid-template-columns: minmax(700px, 1fr) 400px;
+    grid-template-columns: minmax(700px, 0.75fr) 400px;
 }
 .header img{
     border: 0.5px solid;
