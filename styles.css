@@ -2,11 +2,11 @@ body{
     font-family: Roboto, sans-serif;
 }
 .container{
-    display: grid;
-    grid-template-columns: 325px 5fr;
+    min-width: 1473px;
     width: 100vw;
     height: 100vh;
-    border: 1px solid;
+    display: grid;
+    grid-template-columns: 325px 1fr;
 }
 li{
     list-style-type:none;
@@ -56,10 +56,11 @@ h1{
 
 /*----------------------------------------------*/
 .header{
-    margin: 2rem 3rem;
+    padding-left: 3rem;
+    width: 96%;
     display: grid;
-    grid-template-rows: 50px 150px;
-    grid-template-columns: minmax(700px, 0.75fr) 400px;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 2fr;
 }
 .header img{
     border: 0.5px solid;
@@ -140,7 +141,8 @@ h1{
     grid-column: 2;
     display: grid;
     grid-template-rows: 1fr;
-    justify-content: space-between;
+    justify-content: end;
+    gap: 2rem;
 }
 .action-buttons * {
     grid-row: 1;
@@ -157,7 +159,7 @@ h1{
 /*----------------------------------------------*/
 .main{
     background-color: lightgray;
-    width: 100vw;
+    width: 100%;
     height: 71vh;
     display: grid;
     grid-template-columns: 3fr 2fr;
