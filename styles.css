@@ -27,9 +27,9 @@ li{
 }
 .sidebar{
     background-color: #21A6FF;
-    grid-row:  1 / span 6;
+    grid-row:  1 / span 2;
     display: grid;
-    grid-template-rows: 100px 350px;
+    grid-template-rows: 100px 350px 400px;
     gap: 1rem;
 }
 .sidebar i{
